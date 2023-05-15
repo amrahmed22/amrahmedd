@@ -1,0 +1,304 @@
+*
+{
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.5s !important;
+}
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: .1rem solid rgba(255,255,255,.3);
+}
+.text-coffee
+{
+    color: var(--main-color);
+}
+body
+{
+    background-color: var(--bg);
+}
+.home
+{
+    background-image:url(../images/home-img.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+nav
+{
+    border-bottom :var(--border);
+}
+nav .nav-item a
+{
+    margin: 0px 5px;
+    font-size: 17px !important;
+    position: relative;
+    padding: 3px 0px !important;
+    margin: 0px 12px !important;
+}
+nav .nav-item a:hover
+{
+    color: var(--main-color)  !important; 
+}
+/* 
+nav .nav-item a::after
+{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: var(--main-color);
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+}
+ .nav-item a:hover .nav-item a::after
+{
+    opacity: 1 !important;
+} */
+
+
+.header .hone 
+{
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+.header p
+{
+    margin: 20px 0px !important;
+    line-height: 40px;
+    font-size: 20px !important;
+    padding: 0px 10px;
+}
+.header
+{
+    display: flex;
+    justify-content: start;
+}
+
+.header button ,.about button ,.ourMenu button ,.contact button ,.ourBlog button
+{
+    background-color: var(--main-color);
+    padding:5px 30px;
+    letter-spacing: 1px;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+}
+
+.header button:hover , .about button:hover,.ourMenu button:hover,.contact button:hover ,.ourBlog button:hover
+{
+    letter-spacing: 4px;
+}
+
+.about p
+{
+    color:#ccc;
+}
+
+
+
+.content
+{
+    background-color: var(--black);
+}
+
+
+
+.item
+{
+    border: var(--border);  
+    transition: color 0s !important;
+    transition: background-color 1s !important;
+}
+
+.item:hover{
+    background-color:#fff;
+    color: #000 !important;
+    cursor: pointer;
+}
+
+.item:hover button ,.item:hover span
+{
+    color: #000 !important;
+}
+.item button
+{
+    padding: 5px 15px !important;
+}
+.icons span
+{
+    border: var(--border);
+    padding: 10px;
+    font-size: 20px;
+    margin: 2px;
+}
+.product
+{
+    border: var(--border);
+}
+ .icons span:hover
+ {
+    background-color: var(--main-color) !important;
+    cursor: pointer;
+ }
+.mmm
+{
+    width: 20%;
+}
+
+
+.review
+{
+    border: var(--border);
+}
+.review p
+{
+    color: #ccc !important;
+    font-size: 15px !important;
+}
+.contact
+{
+    background-color: var(--black);
+}
+.contact input
+{
+    border: var(--border);
+    background-color: var(--bg);
+}
+
+.ourBlog .image
+{
+    overflow: hidden;
+}
+.ourBlog img:hover
+{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.ourBlog h4:hover
+{
+    color: var(--main-color) !important;
+    cursor: pointer;
+}
+.blog 
+{
+    border: var(--border);
+}
+.blog .content
+{
+    background-color: var(--bg) !important;
+    
+}
+.footer
+{
+    background-color: var(--black);
+}
+.navv span
+{
+    border: var(--border);
+    padding:2px 12px;
+    text-align: center;
+    margin: 5px;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    }
+    .navv span:hover
+    {
+        background-color: var(--main-color);
+        cursor: pointer;
+       
+    }
+
+@media screen and (min-width: 1200px) {
+    .header{
+        
+        justify-content: start !important;
+    }
+  } 
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .header{
+       
+        justify-content: center !important;
+        text-align: center;
+       
+    }
+    .header p
+    {
+        font-size: 18px !important;
+        padding: 0px 0px;
+    }
+    .divvv
+    {
+        width: 80% !important;
+    }
+    .header h1
+    {
+        font-size: 45px !important;
+    }
+  
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .header{
+      
+        justify-content: start !important;
+    }
+    .header p
+    {
+        font-size: 17px !important;
+        padding: 0px 0px;
+    }
+    .divvv
+    {
+        width: 65% !important;
+    }
+        .header h1
+        {
+            font-size: 50px !important;
+        }
+      
+    }
+
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .header{
+    
+        justify-content: start !important;
+    }
+    .header h1
+    {
+        font-size: 50px !important;
+    }
+    .header p 
+    {
+        font-size: 18px !important;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .header{
+       
+        justify-content: center !important;
+        text-align: center;
+      
+    }
+    .header h1
+    {
+        font-size: 45px !important;
+    }
+    .header p
+    {
+        font-size: 18px !important;
+        padding: 0px 0px;
+    }
+    .divvv
+    {
+        width: 90% !important;
+    }
+  }
+
+  .navv a{
+    text-decoration: none !important;
+    color:  #fff  !important;
+  }
